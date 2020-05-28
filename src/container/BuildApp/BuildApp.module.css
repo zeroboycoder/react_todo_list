@@ -1,0 +1,131 @@
+.Body {
+	background-color: #fafafa;
+	width: 100%;
+	min-height: 100vh;
+}
+
+/* Input */
+.Input {
+	width: 680px;
+	margin: 3rem auto;
+	display: flex;
+	justify-content: center;
+}
+
+.Input input {
+	font-family: 'Open Sans', sans-serif;
+	width: 85%;
+	margin-right: 20px;
+	padding: 9px 10px;
+	box-sizing: border-box;
+	font-size: 16px;
+	outline: none;
+	color: #333;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	background-color: #fff;
+	box-shadow: 1px 2px 4px #ddd;
+}
+
+.Input input:focus {
+	background-color: #efefef;
+}
+
+.Input button {
+	width: 15%;
+	font: 16px 'Open Sans', sans-serif;
+	letter-spacing: 1.3px;
+	padding: 9px 10px;
+	color: #fff;
+	border: none;
+	background-color: #0f70d8;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+.Input button:hover,
+.Input button:active {
+	box-shadow: 3px 3px 6px #999;
+}
+
+.Input button:disabled {
+	background-color: #6c757d;
+	cursor: not-allowed;
+}
+
+/* Show Lists */
+.ShowList {
+	width: 680px;
+	margin: 0 auto 25px auto;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	box-shadow: 2px 3px 5px #ddd;
+}
+
+.ShowList h2 {
+	font: 25px 'Open Sans', sans-serif;
+	margin: 5px 0 0 10px;
+}
+
+.ShowList h2::after {
+	display: block;
+	margin: 6px 0 17px 0;
+	content: "";
+	height: 1.5px;
+	width: 103px;
+	background-color: #333;
+}
+
+/* Media Query */
+@media (max-width: 1024px) {
+	.Input {
+		width: 70%;
+	}
+
+	.ShowList {
+		width: 70%;
+		padding: 10px;
+	}
+}
+
+@media (max-width: 760px) {
+	.Input {
+		width: 80%;
+	}
+
+	.ShowList {
+		width: 80%;
+	}
+}
+
+@media (max-width: 520px) {
+	.Input {
+		width: 90%;
+		flex-flow: column;
+	}
+
+	.Input input {
+		width: 100%;
+		padding: 11px;
+	}
+
+	.Input button {
+		width: 90px;
+		margin-top: 15px;
+		border-radius: 4px;
+		margin-left: auto;
+		padding: 10px;
+	}
+
+	.ShowList {
+		width: 95%;
+	}
+
+	.ShowList h2 {
+		font-size: 24px;
+	}
+}

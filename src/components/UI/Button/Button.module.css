@@ -1,0 +1,13 @@
+.Button {
+	font: 15px 'Open Sans', sans-serif;
+	margin: 10px 15px;
+	cursor: pointer;
+}
+
+.Success {
+	color: #5c9210;
+}
+
+.Danger {
+	color: #944317;
+}

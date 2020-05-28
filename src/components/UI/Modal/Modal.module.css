@@ -1,0 +1,13 @@
+.Modal {
+	position: fixed;
+	top: 30%;
+	left: 40%;
+	width: 350px;
+	height: auto;
+	padding: 10px 15px;
+	box-sizing: border-box;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	box-shadow: 2px 2px 5px #ddd;
+	transition: all 0.3s ease-in;
+}

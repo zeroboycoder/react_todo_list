@@ -1,0 +1,80 @@
+.ShowListDiv {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	padding: 13px 10px;
+	padding-right: 5px;
+	box-sizing: border-box;
+}
+
+.ShowListDiv:nth-child(even) {
+	background-color: #eee;
+}
+
+.Task {
+	width: 80%;
+	font: 16px 'Open Sans', sans-serif;
+	letter-spacing: 0.3px;
+	color: #111;
+}
+
+.Done {
+	color: #11a811;
+	text-decoration: line-through;
+}
+
+.Options {
+	width: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.Options i {
+	font-size: 17px;
+	margin: 0 20px;
+	cursor: pointer;
+}
+
+/* .Options i:nth-child(1):hover {
+	color: #f18b04;
+} */
+
+.Options i:nth-child(1):hover {
+	color: #11a811;
+}
+
+.Options i:nth-child(2):hover {
+	color: #f10c0c;
+}
+
+/* Media Query */
+@media (max-width: 1024px) {
+	.Options i {
+		font-size: 16px;
+		margin: 0 16px;
+	}
+}
+@media (max-width: 760px) {
+	.Options i {
+		font-size: 16px;
+		margin: 0 13px;
+	}
+}
+
+@media (max-width: 520px) {
+	.Task {
+		width: 75%;
+	}
+	.Options {
+		width: 25%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.Options i {
+		font-size: 16px;
+		margin: 0 11px;
+	}
+}
